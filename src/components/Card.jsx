@@ -27,9 +27,8 @@ const Card = ({ data, type }) => {
                 <input 
                     type="button"
                     value="Learn More"
-                    className="uppercase font-2xl font-medium text-white w-full p-3 cursor-pointer
-                    bg-gradient-to-r from-btn-gradient-start to-btn-gradient-end
-                    hover:from-transparent hover:to-transparent hover:bg-sky-600"
+                    className="uppercase font-2xl font-medium text-white w-full p-3 cursor-pointer 
+                    bg-btn-bg hover:bg-sky-600"
                 />
             </div>
         </div>
