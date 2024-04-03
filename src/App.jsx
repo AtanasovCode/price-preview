@@ -55,15 +55,16 @@ const App = () => {
 
   return (
     <div className="w-screen min-h-screen
-    bg-background text-text
+    bg-background text-text py-12
     flex flex-col items-center justify-start font-sans
+    md:justify-center
   ">
-      <div className="flex flex-col items-center justify-center mb-8">
+      <div className="flex flex-col items-center justify-center mb-12">
         <div className="text-text text-lg font-semibold mb-6">Our Pricing</div>
         <Toggle pricing={pricing} toggle={toggle} />
       </div>
 
-      <div className="grid grid-cols-1 gap-4 w-full">
+      <div className="grid grid-cols-1 gap-4 w-[90%] sm:w-[70%] md:w-[95%] md:grid-cols-3 xl:w-[70%]">
         <Card data={pricing === "annually" ? annually : monthly} type="Basic" />
         <SpecialCard data={pricing === "annually" ? annually : monthly} type="Professional" />
         <Card data={pricing === "annually" ? annually : monthly} type="Master" />

@@ -22,6 +22,10 @@ export default {
       },
       fontFamily: {
         sans: "Montserrat",
+      },
+      screens: {
+        'sm': "540px",
+        'md': "876px",
       }
     },
   },

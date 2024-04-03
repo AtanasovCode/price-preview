@@ -5,7 +5,7 @@ const Card = ({ data, type }) => {
     const { price, storage, users, send } = data[type.toLowerCase()];
 
     return (
-        <div className="bg-card flex items-center justify-center flex-col mx-3 rounded-lg px-4 py-10">
+        <div className="bg-card flex items-center justify-center flex-col rounded-lg px-4 py-10">
             <div className="text-text font-bold mb-4">
                 {type}
             </div>
