@@ -28,7 +28,9 @@ const SpecialCard = ({ data, type }) => {
                     type="button"
                     value="Learn More"
                     className="uppercase font-2xl font-medium text-white w-full p-3 cursor-pointer
-                    bg-gradient-to-r from-btn-pro-gradient-start to-btn-pro-gradient-end"
+                    bg-gradient-to-r from-btn-pro-gradient-start to-btn-pro-gradient-end
+                    hover:from-transparent hover:to-transparent
+                    hover:bg-sky-700"
                 />
             </div>
         </div>
