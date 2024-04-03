@@ -59,12 +59,12 @@ const App = () => {
     flex flex-col items-center justify-start font-sans
     md:justify-center
   ">
-      <div className="flex flex-col items-center justify-center mb-12">
+      <div className="flex flex-col items-center justify-center mb-24">
         <div className="text-text text-lg font-semibold mb-6">Our Pricing</div>
         <Toggle pricing={pricing} toggle={toggle} />
       </div>
 
-      <div className="grid grid-cols-1 gap-4 w-[90%] sm:w-[70%] md:w-[95%] md:grid-cols-3 xl:w-[70%]">
+      <div className="grid grid-cols-1 gap-4 items-center w-[90%] sm:w-[70%] md:w-[95%] md:grid-cols-3 xl:w-[70%]">
         <Card data={pricing === "annually" ? annually : monthly} type="Basic" />
         <SpecialCard data={pricing === "annually" ? annually : monthly} type="Professional" />
         <Card data={pricing === "annually" ? annually : monthly} type="Master" />
